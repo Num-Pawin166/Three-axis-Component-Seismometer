@@ -1,0 +1,14 @@
+[Unit]
+Description=Vibration monitor (ADS126x + ST7796S)
+After=multi-user.target
+
+[Service]
+Type=simple
+User=ssslab
+WorkingDirectory=/home/ssslab/vibe3d
+ExecStart=/usr/bin/python3 /home/ssslab/vibe3d/app_fft.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

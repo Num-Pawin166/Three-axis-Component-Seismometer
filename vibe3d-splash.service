@@ -1,0 +1,13 @@
+[Unit]
+Description=Vibration monitor splash screen
+After=local-fs.target
+Before=vibe3d.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/python3 /home/ssslab/vibe3d/splash.py
+TimeoutStartSec=40
+
+[Install]
+WantedBy=multi-user.target
