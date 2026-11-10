@@ -72,4 +72,4 @@ journalctl -u vibe3d -f
 - Pi 5 ใช้ `RPi.GPIO` ไม่ได้ ต้องใช้ `gpiozero` + `lgpio`
 - ต้องใช้ `dtoverlay=spi1-2cs` เท่านั้น เพราะ `spi1-3cs` จะยึด GPIO 16 ที่ใช้เป็น T_IRQ ของทัช
 - ต้องตั้ง `spidev.bufsiz=65536` ใน `cmdline.txt` ไม่งั้นจอจะเหลือแค่ 2-3 FPS
-0000
+
